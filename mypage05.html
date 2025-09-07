@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS flex เป็นวิธีการหนึ่งที่ใช้ในการจัด Layout */
+        /* คือการจัดวาง element ของเว็บในแนวนอน กับแนวตั้ง (1-dimention)*/
+        #container{
+            background-color: aqua;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #container ul{
+            /* display: flex;*/
+            display: flex;
+            flex-direction: column; 
+            gap: 20px;
+            justify-content: center;
+        }
+        li{
+            list-style-type: none;
+        }
+        #home:hover{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <ul>
+            <li id="home">HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+            <li>REGISTER</li>
+            <li>LOGIN</li>
+        </ul>
+    </div>
+</body>
+</html>
