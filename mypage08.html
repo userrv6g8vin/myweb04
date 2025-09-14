@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* กำหนด Breakpoint */
+        /* Max-width คือไม่มากกว่า */
+        /* min-width คือ ไม่น้อยกว่า */
+        /* Mobile/Mini Tablet/Mini Ipad Size */
+        @media screen and (max-width: 768px) {
+            h1 {
+                background-color: #ff8000;
+            }
+            span{
+                font-size: 10rem;
+                color: #00ff22;
+            }
+        }
+
+        /* Tablet Size */
+        @media scren and (min-width: 769px) and (max-width: 1279px) {
+            h1 {
+                background-color: #ff0000;
+            }
+            span{
+                font-size: 5rem;
+                color: #0059ff;
+            }
+        }
+
+        /* Desktop PC Notebook Size */
+        @media screen and (min-width: 1280px) {
+            h1 {
+                background-color: #00ff00;
+            }
+            span{
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Respponse web -->
+    <h1>Hello Response web site</h1>
+    <span>SAU</span>
+</body>
+
+</html>
